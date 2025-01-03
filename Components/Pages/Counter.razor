@@ -3,15 +3,33 @@
 <h1>Counter</h1>
 
 <p role="status">Current count: @currentCount</p>
-
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<h1>@name</h1>
+<p></p>
+<button class="btn btn-primary" @onclick="showName">show hidden name</button>
 
 @code {
     private int currentCount = 0;
-
+    private string name = "";
+    bool nameShown = false;
+    
     private void IncrementCount()
     {
         currentCount++;
     }
+
+    private void showName()
+    {
+        if (!nameShown)
+        {
+            name = "ayush karki";
+        }
+        else
+        {
+            name = "";
+          
+        }
+        nameShown=!nameShown;
+    }
+    
 
 }

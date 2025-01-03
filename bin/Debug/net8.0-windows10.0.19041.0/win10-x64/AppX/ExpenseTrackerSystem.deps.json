@@ -13,6 +13,8 @@
           "Microsoft.Extensions.Logging.Debug": "8.0.0",
           "Microsoft.Maui.Controls": "8.0.40",
           "Microsoft.Maui.Controls.Compatibility": "8.0.40",
+          "SQLitePCLRaw.bundle_green": "2.1.11-pre20241216174303",
+          "sqlite-net-pcl": "1.9.172",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.31"
         },
         "runtime": {
@@ -631,6 +633,58 @@
           }
         }
       },
+      "sqlite-net-pcl/1.9.172": {
+        "dependencies": {
+          "SQLitePCLRaw.bundle_green": "2.1.11-pre20241216174303"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLite-net.dll": {
+            "assemblyVersion": "1.9.172.0",
+            "fileVersion": "1.9.172.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.bundle_green/2.1.11-pre20241216174303": {
+        "dependencies": {
+          "SQLitePCLRaw.lib.e_sqlite3": "2.1.11-pre20241216174303",
+          "SQLitePCLRaw.provider.e_sqlite3": "2.1.11-pre20241216174303"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll": {
+            "assemblyVersion": "2.1.11.2541",
+            "fileVersion": "2.1.11.2541"
+          }
+        }
+      },
+      "SQLitePCLRaw.core/2.1.11-pre20241216174303": {
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {
+            "assemblyVersion": "2.1.11.2541",
+            "fileVersion": "2.1.11.2541"
+          }
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3/2.1.11-pre20241216174303": {
+        "native": {
+          "runtimes/win-x64/native/e_sqlite3.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3/2.1.11-pre20241216174303": {
+        "dependencies": {
+          "SQLitePCLRaw.core": "2.1.11-pre20241216174303"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/SQLitePCLRaw.provider.e_sqlite3.dll": {
+            "assemblyVersion": "2.1.11.2541",
+            "fileVersion": "2.1.11.2541"
+          }
+        }
+      },
       "System.IO.Pipelines/8.0.0": {
         "runtime": {
           "lib/net8.0/System.IO.Pipelines.dll": {
@@ -639,6 +693,7 @@
           }
         }
       },
+      "System.Memory/4.5.3": {},
       "System.Text.Encodings.Web/8.0.0": {},
       "System.Text.Json/8.0.0": {
         "dependencies": {
@@ -931,12 +986,54 @@
       "path": "microsoft.windowsappsdk/1.5.240311000",
       "hashPath": "microsoft.windowsappsdk.1.5.240311000.nupkg.sha512"
     },
+    "sqlite-net-pcl/1.9.172": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-go533+huyvg5bOMmCpX+DyvLrcVRiEBIpqEiDHgXRijWIBBNkWnyMr/w+5ZzrUArKY+4ApucsbBnFtP3QITrJg==",
+      "path": "sqlite-net-pcl/1.9.172",
+      "hashPath": "sqlite-net-pcl.1.9.172.nupkg.sha512"
+    },
+    "SQLitePCLRaw.bundle_green/2.1.11-pre20241216174303": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2dZQ14fo91wT8FhiIfS21fSWiT17ozIsZqpCx6BZE9/VV1cPAb/dp65i3B1LMx0BZRzIBwV7sy2VQIuMGu+V5g==",
+      "path": "sqlitepclraw.bundle_green/2.1.11-pre20241216174303",
+      "hashPath": "sqlitepclraw.bundle_green.2.1.11-pre20241216174303.nupkg.sha512"
+    },
+    "SQLitePCLRaw.core/2.1.11-pre20241216174303": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Hf4sR/gKLEERFEThipocihp+No6f6SHbhZFosmiI5Iktd/7B7HeXEcP87564P8kSxZyPkU6Nhb8w95YAiHuhrQ==",
+      "path": "sqlitepclraw.core/2.1.11-pre20241216174303",
+      "hashPath": "sqlitepclraw.core.2.1.11-pre20241216174303.nupkg.sha512"
+    },
+    "SQLitePCLRaw.lib.e_sqlite3/2.1.11-pre20241216174303": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SMMe26Mjy2eX0ABusI1/YPaz5YaitqAkqDXvTrn8lqeVsUMcRiEW3HA9oQVGoZYZvo2AcvS94Mh445JQefgO5w==",
+      "path": "sqlitepclraw.lib.e_sqlite3/2.1.11-pre20241216174303",
+      "hashPath": "sqlitepclraw.lib.e_sqlite3.2.1.11-pre20241216174303.nupkg.sha512"
+    },
+    "SQLitePCLRaw.provider.e_sqlite3/2.1.11-pre20241216174303": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5O9T+J1FejrxQQZty4qFNDYIGnewyvidrxMGaa0I5pDXET+ENMgzXIxZKPZSrwo/MokeggKBeViWkWlISASUYQ==",
+      "path": "sqlitepclraw.provider.e_sqlite3/2.1.11-pre20241216174303",
+      "hashPath": "sqlitepclraw.provider.e_sqlite3.2.1.11-pre20241216174303.nupkg.sha512"
+    },
     "System.IO.Pipelines/8.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-FHNOatmUq0sqJOkTx+UF/9YK1f180cnW5FVqnQMvYUN0elp6wFzbtPSiqbo1/ru8ICp43JM1i7kKkk6GsNGHlA==",
       "path": "system.io.pipelines/8.0.0",
       "hashPath": "system.io.pipelines.8.0.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
     },
     "System.Text.Encodings.Web/8.0.0": {
       "type": "package",

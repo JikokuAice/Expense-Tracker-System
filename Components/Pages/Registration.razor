@@ -1,0 +1,63 @@
+@page "/registration"
+@using ExpenseTrackerSystem.Components.Layout
+@using ExpenseTrackerSystem.Models.Enums
+@layout FirstLayout
+
+
+<div class="d-flex justify-content-center align-items-start vh-100">
+        <h4>Sign Up</h4>
+        <div class="form-group d-flex flex-column p-1 bd-highlight mb-3 ">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill-add"></i></span>
+                </div>
+                <input type="text" class="form-control" @bind="name" id="fullname" placeholder="Enter Full Name" aria-label="Name" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group  mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-at-fill"></i></span>
+                </div>
+                <input type="email" @bind="email" class="form-control" id="email"  placeholder="Enter Email" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group  mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"> <i class="bi bi-key-fill"></i></span>
+                </div>
+               
+                <input type="password" @bind="password" class="form-control" id="Password1" placeholder="Enter Password">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"> <i class="bi bi-key"></i></span>
+                </div>
+                <input type="password"  @bind="confirmPassword" class="form-control" id="Password2" placeholder="Confirm Password">
+            </div>
+            <div class="form-floating mb-3">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>$  Choose Currency</option>
+                    <option  value="1">@Currency.Nepalese</option>
+                    <option value="2">@Currency.Usd</option>
+                </select>
+            </div>
+            
+            <p>Already Have An Account?
+                <button  @onclick="NavigateTologinPage" class="btn btn-primary" type="button">Log in</button>
+            </p>
+            <button  @onclick="RegisterHandler" class="btn btn-dark">Submit</button>
+            @if (!string.IsNullOrEmpty(errorMessage))
+            {
+                <div class="p-1">
+                    <p style="color:red"><i class="bi bi-bug" style="color:red"></i>  @errorMessage</p>
+                </div>
+            }
+        </div>
+        
+        </div>
+<style>
+    html, body {
+        height: 100%; /* Ensures the height matches the viewport */
+        overflow:hidden; /* Prevents scrolling */
+    }
+    
+</style>

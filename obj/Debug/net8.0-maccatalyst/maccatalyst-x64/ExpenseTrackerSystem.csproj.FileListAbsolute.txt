@@ -32,6 +32,10 @@ C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Essentials.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Graphics.dll
+C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\SQLite-net.dll
+C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.core.dll
+C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\System.IO.Pipelines.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\ar\Microsoft.Maui.Controls.resources.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\ca\Microsoft.Maui.Controls.resources.dll
@@ -67,6 +71,7 @@ C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\zh-HK\Microsoft.Maui.Controls.resources.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\zh-Hans\Microsoft.Maui.Controls.resources.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\zh-Hant\Microsoft.Maui.Controls.resources.dll
+C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\libe_sqlite3.dylib
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.CSharp.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.VisualBasic.Core.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.VisualBasic.dll
@@ -321,6 +326,7 @@ C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ExpenseTrackerSystem.AssemblyInfo.cs
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ExpenseTrackerSystem.csproj.CoreCompileInputs.cache
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ExpenseTrackerSystem.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ExpenseTrackerSystem.sourcelink.json
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\XamlC.stamp
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ExpenseT.94DB6C66.Up2Date
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ExpenseTrackerSystem.dll

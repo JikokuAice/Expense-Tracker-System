@@ -1,0 +1,100 @@
+@page "/outflow"
+
+<h3>Outfloiw</h3>
+<div class="container my-5">
+    <!-- Header -->
+    <h1 class="text-center mb-4">Cash Outflow</h1>
+
+    <div class="row">
+        <!-- Left Section -->
+        <div class="col-md-8">
+            <!-- Search and Filter -->
+            <div class="d-flex mb-3">
+                <input type="text" class="form-control me-2" placeholder="Value">
+                <button class="btn btn-primary me-2">Search</button>
+                <button class="btn btn-secondary">Filter</button>
+            </div>
+
+            <!-- Table -->
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Inflow Date</th>
+                    <th>Transaction Detail</th>
+                    <th>Amounts</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Money from salary</td>
+                    <td>Credit</td>
+                    <td>2024-11-12 1:00 PM</td>
+                    <td><button class="btn btn-link">View</button></td>
+                    <td class="text-success">Rs. 1,200.00</td>
+                </tr>
+                <tr>
+                    <td>Inflow 1</td>
+                    <td>Gain</td>
+                    <td>2024-11-12 3:00 PM</td>
+                    <td><button class="btn btn-link">View</button></td>
+                    <td class="text-success">Rs. 1,200.00</td>
+                </tr>
+                <tr>
+                    <td>Salary added</td>
+                    <td>Budget</td>
+                    <td>2024-11-12 3:00 PM</td>
+                    <td><button class="btn btn-link">View</button></td>
+                    <td class="text-success">Rs. 10,000.00</td>
+                </tr>
+                <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Right Section -->
+        <div class="col-md-4">
+            <div class="card p-3">
+                <h4 class="text-center">Add Income</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="incomeName" class="form-label">Income Name</label>
+                        <input type="text" class="form-control" id="incomeName" placeholder="Value">
+                    </div>
+                    <div class="mb-3">
+                        <label for="incomeDate" class="form-label">Income Date</label>
+                        <input type="date" class="form-control" id="incomeDate">
+                    </div>
+                    <div class="mb-3">
+                        <label for="category" class="form-label">Category</label>
+                        <select class="form-select" id="category">
+                            <option>Gain</option>
+                            <option>Credit</option>
+                            <option>Budget</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="customTag" class="form-label">Custom Tag</label>
+                        <input type="text" class="form-control" id="customTag" placeholder="Salary">
+                    </div>
+                    <div class="mb-3">
+                        <label for="amount" class="form-label">Amount</label>
+                        <input type="text" class="form-control" id="amount" placeholder="Rs. 5000">
+                    </div>
+                    <div class="mb-3">
+                        <label for="label" class="form-label">Label</label>
+                        <input type="text" class="form-control" id="label" placeholder="Value">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Create</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+@code {
+
+}

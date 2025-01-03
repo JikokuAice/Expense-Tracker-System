@@ -54,6 +54,10 @@ C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Projection.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Widgets.Projection.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLite-net.dll
+C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.core.dll
+C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.IO.Pipelines.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ar\Microsoft.Maui.Controls.resources.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ca\Microsoft.Maui.Controls.resources.dll
@@ -91,6 +95,7 @@ C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\zh-Hant\Microsoft.Maui.Controls.resources.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Graphics.Canvas.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\e_sqlite3.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.SDK.NET.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\WinRT.Runtime.dll
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ExpenseTrackerSystem.csproj.AssemblyReference.cache
@@ -181,6 +186,7 @@ C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ExpenseTrackerSystem.AssemblyInfoInputs.cache
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ExpenseTrackerSystem.AssemblyInfo.cs
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ExpenseTrackerSystem.csproj.CoreCompileInputs.cache
+C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ExpenseTrackerSystem.sourcelink.json
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlC.stamp
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ExpenseT.94DB6C66.Up2Date
 C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ExpenseTrackerSystem.dll

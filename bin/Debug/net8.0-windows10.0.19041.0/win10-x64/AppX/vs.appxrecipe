@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-12-17T16:51:55.013</Modified>
+      <Modified>2025-01-03T14:07:17.629</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-12-17T16:51:54.592</Modified>
+      <Modified>2024-12-31T15:25:12.217</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ExpenseTrackerSystem.runtimeconfig.json">
       <PackagePath>ExpenseTrackerSystem.runtimeconfig.json</PackagePath>
-      <Modified>2024-12-17T16:51:54.048</Modified>
+      <Modified>2024-12-30T11:00:45.737</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ExpenseTrackerSystem.dll">
       <PackagePath>ExpenseTrackerSystem.dll</PackagePath>
-      <Modified>2024-12-17T16:51:52.395</Modified>
+      <Modified>2025-01-03T14:07:16.642</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ExpenseTrackerSystem.exe</PackagePath>
-      <Modified>2024-12-17T16:51:52.412</Modified>
+      <Modified>2025-01-03T14:07:16.714</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -71,239 +71,239 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
-      <Modified>2024-12-17T16:50:01.348</Modified>
+      <Modified>2024-12-30T03:57:24.963</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-12-17T16:51:39.918</Modified>
+      <Modified>2024-12-30T11:00:40.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-12-17T16:51:39.953</Modified>
+      <Modified>2024-12-30T11:00:40.739</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-12-17T16:51:40.005</Modified>
+      <Modified>2024-12-30T11:00:40.761</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-12-17T16:51:40.085</Modified>
+      <Modified>2024-12-30T11:00:40.786</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-12-17T16:51:40.369</Modified>
+      <Modified>2024-12-30T11:00:40.906</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
       <Modified>2024-12-17T16:50:00.267</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
-      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.762</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
-      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.763</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
-      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.763</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
-      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.764</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
-      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.764</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
-      <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.765</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
-      <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.765</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
-      <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.766</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
-      <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.766</Modified>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+      <PackagePath>appicon.ico</PackagePath>
+      <Modified>2024-12-30T11:00:44.356</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.766</Modified>
+      <Modified>2024-12-30T11:00:44.351</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
-      <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.767</Modified>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+      <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.351</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
-      <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.767</Modified>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+      <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.350</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
-      <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.768</Modified>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+      <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.350</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
-      <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.768</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
-      <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.769</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
-      <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.769</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
-      <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.769</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
-      <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.770</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
-      <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.770</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
-      <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.771</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
-      <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.771</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
-      <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.771</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
-      <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.772</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
-      <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.772</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
-      <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.773</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
-      <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.773</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
-      <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.774</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
-      <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.774</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
-      <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.775</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
-      <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.775</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.776</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.776</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.777</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.777</Modified>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+      <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.350</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.777</Modified>
+      <Modified>2024-12-30T11:00:44.354</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.778</Modified>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.354</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.778</Modified>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.353</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.779</Modified>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.354</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.779</Modified>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.354</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.780</Modified>
+      <Modified>2024-12-30T11:00:44.355</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
-      <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.781</Modified>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.354</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
-      <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.781</Modified>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.354</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
-      <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.782</Modified>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.354</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
-      <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.783</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
-      <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.783</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
-      <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.784</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
-      <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.784</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
-      <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.784</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
-      <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.785</Modified>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.354</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-12-17T16:51:50.785</Modified>
+      <Modified>2024-12-30T11:00:44.356</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
-      <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-12-17T16:51:50.786</Modified>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+      <PackagePath>appiconLogo.scale-125.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.356</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+      <PackagePath>appiconLogo.scale-150.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.356</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+      <PackagePath>appiconLogo.scale-200.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.356</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+      <PackagePath>appiconLogo.scale-400.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.355</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+      <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.355</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+      <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.355</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+      <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.355</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+      <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.355</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+      <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.355</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+      <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+      <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+      <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+      <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+      <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+      <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.353</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+      <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.353</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+      <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+      <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+      <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+      <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.353</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+      <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.353</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+      <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.353</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+      <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.353</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+      <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.353</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+      <PackagePath>appiconWideTile.scale-100.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.351</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+      <PackagePath>appiconWideTile.scale-125.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.351</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+      <PackagePath>appiconWideTile.scale-150.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.351</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+      <PackagePath>appiconWideTile.scale-200.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.351</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+      <PackagePath>appiconWideTile.scale-400.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.351</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.350</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.350</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.350</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.350</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+      <Modified>2024-12-30T11:00:44.349</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ExpenseTrackerSystem.deps.json">
       <PackagePath>ExpenseTrackerSystem.deps.json</PackagePath>
-      <Modified>2024-12-17T16:51:53.937</Modified>
+      <Modified>2024-12-31T15:25:11.866</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -505,6 +505,22 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2024-03-11T10:57:44.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\.nuget\packages\sqlite-net-pcl\1.9.172\lib\netstandard2.0\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+      <Modified>2024-03-27T22:22:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\.nuget\packages\sqlitepclraw.bundle_green\2.1.11-pre20241216174303\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+      <Modified>2024-12-16T17:45:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\.nuget\packages\sqlitepclraw.core\2.1.11-pre20241216174303\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+      <Modified>2024-12-16T17:43:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.1.11-pre20241216174303\lib\net6.0-windows7.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+      <Modified>2024-12-16T17:43:58.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\.nuget\packages\system.io.pipelines\8.0.0\lib\net8.0\System.IO.Pipelines.dll">
       <PackagePath>System.IO.Pipelines.dll</PackagePath>
       <Modified>2023-10-31T14:59:26.000</Modified>
@@ -653,6 +669,10 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2024-03-08T18:44:10.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ayush\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.11-pre20241216174303\runtimes\win-x64\native\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+      <Modified>2024-12-16T17:37:26.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\.nuget\packages\microsoft.maui.controls.compatibility\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
       <Modified>2024-05-13T18:12:44.000</Modified>
@@ -667,11 +687,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\ExpenseTrackerSystem.styles.css">
       <PackagePath>wwwroot\ExpenseTrackerSystem.styles.css</PackagePath>
-      <Modified>2024-12-17T16:50:41.857</Modified>
+      <Modified>2024-12-30T10:23:23.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\ExpenseTrackerSystem.bundle.scp.css">
       <PackagePath>wwwroot\ExpenseTrackerSystem.bundle.scp.css</PackagePath>
-      <Modified>2024-12-17T16:50:41.865</Modified>
+      <Modified>2024-12-30T10:23:23.207</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ayush\Music\ExpenseTrackerSystem\ExpenseTrackerSystem\Components\Layout\MainLayout.razor.css">
       <PackagePath>Components\Layout\MainLayout.razor.css</PackagePath>
