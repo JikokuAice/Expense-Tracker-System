@@ -1,0 +1,46 @@
+﻿@page "/login"
+@layout EmptyLayout
+
+<PageTitle>@Layout.PageTitle</PageTitle>
+
+
+<div class="flex-column justify-space-around">
+
+    <h3 xmlns="http://www.w3.org/1999/html">Login</h3>
+    <br/>
+    <div class="d-flex justify-content-center align-items-start vh-100">
+
+        <h4>Login</h4>
+        <div class="form-group d-flex flex-column p-1 bd-highlight mb-3 ">
+            <div class="input-group  mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-at-fill"></i></span>
+                </div>
+                <input type="email" class="form-control" id="LoginEmail" @bind="LoginDetails.Username" placeholder="Enter Email" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group  mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"> <i class="bi bi-key-fill"></i></span>
+                </div>
+
+                <input type="password" class="form-control" @bind="LoginDetails.Password" id="LoginPassword" placeholder="Enter Password">
+            </div>
+
+
+            <p>Don't have an account?
+                <a href="register" class="btn btn-primary">Sign Up </a>
+            </p>
+
+            <button @onclick="LoginHandler" class="btn btn-dark">Log In </button>
+        </div>
+
+    </div>
+</div>
+<style>
+    
+    html, body {
+        height: 100%; /* Ensures the height matches the viewport */
+        overflow: hidden; /* Prevents scrolling */
+    }
+    
+</style>

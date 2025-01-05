@@ -1,0 +1,102 @@
+﻿@page "/tags"
+@using ExpenseManagementSystem.DTOs.Tags
+
+<div class="inner-padding">
+    <div class="filter d-flex justify-content-between align-items-center mb-4 gap-3 flex-wrap">
+        <div class="filter-left d-flex align-items-center gap-x-2">
+            <MudTextField T="string" @bind-Value="Search" Immediate="true" Placeholder="Search" Variant="Variant.Text" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" Class="search-input text-dark" />
+        </div>
+        <div class="filter-right">
+            <MudButton Color="Color.Primary" Variant="Variant.Filled" DropShadow="false" Class="btn btn--md" OnClick="OpenCloseInsertTagModal" StartIcon="@Icons.Material.Filled.Add" Disabled="IsInsertTagModalOpen">Add Tags</MudButton>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table country-table bg-success">
+            <thead>
+            <tr>
+                <th class="text-white">#</th>
+                <th class="text-white" @onclick="() => ChangeSorting(nameof(GetTagDto.Name))" style="cursor: pointer;">
+                    Title
+                    <MudIcon Icon="@GetSortIcon(nameof(GetTagDto.Name))" Class="ms-1" />
+                </th>
+                <th class="text-white">Background Color</th>
+                <th class="text-white">Text Color</th>
+                <th class="text-white">Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var tag in TagModels)
+            {
+            <tr>
+                <td class="text-white">@(TagModels.IndexOf(tag) + 1).</td>
+                <td class="text-white">@tag.Name</td>
+                <td class="text-white">
+                    <span style="background-color: @tag.BackgroundColor">
+                        @tag.BackgroundColor
+                    </span>
+                </td>
+                <td class="text-white">@tag.TransactionType</td>
+                <td class="text-white">
+                    <span style="background-color: @tag.TextColor">
+                        @tag.TextColor
+                    </span>
+                </td>
+                <td class="text-white">
+                    @if (tag.IsDefault)
+                    {
+                        <MudChip T="string" Variant="Variant.Outlined" Class="status" Color="Color.Warning">
+                            <span class="text-white">Default</span>
+                        </MudChip>
+                    }
+                    else
+                    {
+                        <MudChip T="string" Variant="Variant.Outlined" Class="status" Color="Color.Default">
+                            <span class="text-white">Custom</span>
+                        </MudChip>
+                    }
+                </td>
+            </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@if (IsInsertTagModalOpen)
+{
+    <ModalDialog Title="Tags" Size="lg">
+        <BodyContent>
+            <EditForm Model="TagModel" FormName="Insert Tag" OnSubmit="InsertTag">
+                <DataAnnotationsValidator />
+                <div class="mb-3">
+                    <MudTextField @bind-Value="TagModel.Name" 
+                                  Label="Name" 
+                                  For="@(() => TagModel.Name)" 
+                                  Variant="Variant.Text" 
+                                  Placeholder="Enter the Tag Name" 
+                                  Required="true"
+                                  Immediate="true"/>
+                </div>
+                <div class="mb-3">
+                    <MudColorPicker Label="Background Color"
+                                    ColorPickerView="ColorPickerView.Spectrum"
+                                    @bind-Value="@TagModel.BackgroundColor"
+                                    For="@(() => TagModel.BackgroundColor)"
+                                    Variant="Variant.Text" />
+                </div>
+                <div class="mb-3">
+                    <MudColorPicker Label="Text Color"
+                                    ColorPickerView="ColorPickerView.Spectrum"
+                                    @bind-Value="@TagModel.TextColor"
+                                    For="@(() => TagModel.TextColor)"
+                                    Variant="Variant.Text" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" @onclick="@OpenCloseInsertTagModal">Discard</button>
+                    <button type="submit" class="btn btn-outline-success">Submit</button>
+                </div>
+            </EditForm>
+        </BodyContent>
+    </ModalDialog>
+}
