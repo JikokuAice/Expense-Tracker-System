@@ -1,0 +1,211 @@
+﻿@using ExpenseManagementSystem.DTOs.Transaction
+@using ExpenseManagementSystem.Models.Constant
+
+<div class="inner-padding">
+    <div class="filter d-flex justify-content-between align-items-center mb-4 gap-3 flex-wrap">
+        <div class="filter-left d-flex align-items-center gap-x-2">
+            <MudTextField T="string" @bind-Value="Search" Immediate="true" Placeholder="Search" Variant="Variant.Text" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" Class="search-input text-dark" />
+            <Filter OnFilterApplication="OnTransactionFilterHandler">
+                <MudSelect T="Guid"
+                           Label="Tags"
+                           MultiSelection="true"
+                           @bind-SelectedValues="FilterTagIdentifiers"
+                           Variant="Variant.Text"
+                           AnchorOrigin="Origin.BottomCenter"
+                           ToStringFunc="@(id => Tags.FirstOrDefault(o => o.Id == id)?.Name ?? string.Empty)">
+                    @foreach (var tag in Tags)
+                    {
+                        <MudSelectItem T="Guid" Value="@tag.Id">
+                            @tag.Name
+                        </MudSelectItem>
+                    }
+                </MudSelect>
+                <MudDatePicker @bind-Date="StartDate"
+                               Label="Start Date"
+                               Variant="Variant.Text"
+                               DateFormat="dd.MM.yyyy"
+                               Placeholder="Select a Start Date"
+                               PickerVariant="PickerVariant.Dialog" />
+                <MudDatePicker @bind-Date="EndDate"
+                               Label="End Date"
+                               Variant="Variant.Text"
+                               DateFormat="dd.MM.yyyy"
+                               Placeholder="Select a End Date"
+                               PickerVariant="PickerVariant.Dialog" />
+            </Filter>
+        </div>
+        <div class="filter-right">
+            <MudText Style="color: green; font-size: 2rem;">Balance: @Balance </MudText>
+            <MudButton Color="Color.Primary" Variant="Variant.Filled" DropShadow="false" Class="btn btn--md" OnClick="OpenCloseInsertIntoTransactionModal" StartIcon="@Icons.Material.Filled.Add" Disabled="IsInsertIntoTransactionModalOpen">Add Transactions</MudButton>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table country-table bg-success">
+            <thead>
+            <tr>
+                <th class="text-white">#</th>
+                <th  class="text-white" @onclick="() => ChangeSorting(nameof(GetTransactionDto.Title))" style="cursor: pointer;">
+                    Title
+                    <MudIcon Icon="@GetSortIcon(nameof(GetTransactionDto.Title))" Class="ms-1" />
+                </th>
+                <th  class="text-white" @onclick="() => ChangeSorting(nameof(GetTransactionDto.Amount))" style="cursor: pointer;">
+                    Amount
+                    <MudIcon Icon="@GetSortIcon(nameof(GetTransactionDto.Amount))" Class="ms-1" />
+                </th>
+                <th  class="text-white">Type</th>
+                <th  class="text-white">Source</th>
+                <th  class="text-white" @onclick="() => ChangeSorting(nameof(GetTransactionDto.Date))" style="cursor: pointer;">
+                    Date
+                    <MudIcon Icon="@GetSortIcon(nameof(GetTransactionDto.Date))" Class="ms-1" />
+                </th>
+                <th  class="text-white">Tags</th>
+                <th  class="text-white">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var transaction in TransactionModels)
+            {
+            <tr>
+                <td  class="text-white">@(TransactionModels.IndexOf(transaction) + 1).</td>
+                <td  class="text-white">@transaction.Title</td>
+                <td  class="text-white">@transaction.Amount</td>
+                <td  class="text-white">@transaction.Type</td>
+                <td  class="text-white">@transaction.Source</td>
+                <td  class="text-white">@transaction.Date</td>
+                <td  class="text-white">
+                    @foreach (var item in transaction.Tags)
+                    {
+                        <span style="background-color: @item.BackgroundColor; color:  @item.TextColor">
+                            @item.Name
+                        </span>
+                    }
+                </td>
+                <td>
+                    <MudButton Color="Color.Primary" Variant="Variant.Filled" DropShadow="false" Class="btn btn--md" OnClick="() => OpenCloseUpdateTransactionNoteModal(transaction.Id)" StartIcon="@Icons.Material.Filled.Add" Disabled="IsUpdateTransactionNoteModalOpen">Update Note</MudButton>
+                </td>
+            </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@if (IsInsertIntoTransactionModalOpen)
+{
+    <ModalDialog Title="Tags" Size="lg">
+        <BodyContent>
+            <EditForm Model="InsertIntoTransactionModel" FormName="Insert Tag" OnSubmit="InsertIntoTransaction">
+                <DataAnnotationsValidator />
+                <div class="mb-3">
+                    <MudTextField @bind-Value="InsertIntoTransactionModel.Title" 
+                                  Label="Title" 
+                                  For="@(() => InsertIntoTransactionModel.Title)" 
+                                  Variant="Variant.Text" 
+                                  Placeholder="Enter the Transaction Title" 
+                                  Required="true"
+                                  Immediate="true"/>
+                </div>
+                <div class="mb-3">
+                    <MudTextField @bind-Value="InsertIntoTransactionModel.Amount"
+                                  Label="Amount"
+                                  For="@(() => InsertIntoTransactionModel.Amount)"
+                                  Variant="Variant.Text"
+                                  Placeholder="Enter the Transaction Amount"
+                                  Required="true"
+                                  InputType="InputType.Number"
+                                  Immediate="true"/>
+                </div>
+                <div class="mb-3">
+                    <MudTextField @bind-Value="InsertIntoTransactionModel.Note"
+                                  Label="Note"
+                                  For="@(() => InsertIntoTransactionModel.Note)"
+                                  Variant="Variant.Text"
+                                  Placeholder="Enter the Transaction Note"
+                                  Immediate="true"
+                                  Lines="3"/>
+                </div>
+                <div class="mb-3">
+                    <MudSelect T="@(TransactionType)" 
+                               @bind-Value="InsertIntoTransactionModel.Type" 
+                               Label="Type"
+                               Required="true"
+                               Variant="Variant.Text" 
+                               AnchorOrigin="Origin.BottomCenter">
+                        <MudSelectItem Value="@(Models.Constant.TransactionType.None)">None</MudSelectItem>
+                        <MudSelectItem Value="@(Models.Constant.TransactionType.Inflows)">Inflows</MudSelectItem>
+                        <MudSelectItem Value="@(Models.Constant.TransactionType.Outflows)">Outflows</MudSelectItem>
+                    </MudSelect>
+                </div>
+                <div class="mb-3">
+                    <MudSelect T="@(TransactionSource)" 
+                               @bind-Value="InsertIntoTransactionModel.Source" 
+                               Label="Source"
+                               Required="true"
+                               Variant="Variant.Text" 
+                               AnchorOrigin="Origin.BottomCenter" 
+                               Disabled="@(InsertIntoTransactionModel.Type == Models.Constant.TransactionType.None)">
+                        <MudSelectItem Value="@(TransactionSource.None)">None</MudSelectItem>
+                        @if (InsertIntoTransactionModel.Type == Models.Constant.TransactionType.Inflows)
+                        {
+                            <MudSelectItem Value="@(TransactionSource.Credit)">Credit</MudSelectItem>
+                            <MudSelectItem Value="@(TransactionSource.Gain)">Gain</MudSelectItem>
+                            <MudSelectItem Value="@(TransactionSource.Budget)">Budget</MudSelectItem>
+                        }
+                        else if (InsertIntoTransactionModel.Type == Models.Constant.TransactionType.Outflows)
+                        {
+                            <MudSelectItem Value="@(TransactionSource.Debit)">Debit</MudSelectItem>
+                            <MudSelectItem Value="@(TransactionSource.Spending)">Spending</MudSelectItem>
+                            <MudSelectItem Value="@(TransactionSource.Expenses)">Expenses</MudSelectItem>
+                        }
+                    </MudSelect>
+                </div>
+                <div class="mb-3">
+                    <MudSelect T="Guid"
+                               Label="Tags"
+                               MultiSelection="true"
+                               @bind-SelectedValues="TagIdentifiers"
+                               Variant="Variant.Text"
+                               AnchorOrigin="Origin.BottomCenter"
+                               ToStringFunc="@(id => Tags.FirstOrDefault(o => o.Id == id)?.Name ?? string.Empty)">
+                        @foreach (var tag in Tags)
+                        {
+                            <MudSelectItem T="Guid" Value="@tag.Id">
+                                @tag.Name
+                            </MudSelectItem>
+                        }
+                    </MudSelect>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" @onclick="@OpenCloseInsertIntoTransactionModal">Discard</button>
+                    <button type="submit" class="btn btn-outline-dark">Submit</button>
+                </div>
+            </EditForm>
+        </BodyContent>
+    </ModalDialog>
+}
+
+@if (IsUpdateTransactionNoteModalOpen)
+{
+    <ModalDialog Title="Tags" Size="lg">
+        <BodyContent>
+            <EditForm Model="UpdateTransactionModel" FormName="Update Note" OnSubmit="UpdateTransactionNote">
+                <DataAnnotationsValidator />
+                <div class="mb-3">
+                    <MudTextField @bind-Value="UpdateTransactionModel.Note"
+                                  Label="Note"
+                                  For="@(() => UpdateTransactionModel.Note)"
+                                  Variant="Variant.Text"`
+                                  Placeholder="Enter the Transaction Note"
+                                  Required="true"
+                                  Immediate="true"
+                                  Lines="3"/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" @onclick="() => OpenCloseUpdateTransactionNoteModal(UpdateTransactionModel.Id)">Discard</button>
+                    <button type="submit" class="btn btn-outline-success">Submit</button>
+                </div>
+            </EditForm>
+        </BodyContent>
+    </ModalDialog>
+}
