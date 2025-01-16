@@ -67,9 +67,9 @@
 {
     <ModalDialog Title="Tags" Size="lg">
         <BodyContent>
-            <EditForm Model="TagModel" FormName="Insert Tag" OnSubmit="InsertTag">
+            <EditForm Model="TagModel" FormName="Insert Tag"  OnSubmit="InsertTag">
                 <DataAnnotationsValidator />
-                <div class="mb-3">
+                <div class="mb-3" style="z-index: 999">
                     <MudTextField @bind-Value="TagModel.Name" 
                                   Label="Name" 
                                   For="@(() => TagModel.Name)" 
@@ -99,4 +99,4 @@
             </EditForm>
         </BodyContent>
     </ModalDialog>
-}
+};

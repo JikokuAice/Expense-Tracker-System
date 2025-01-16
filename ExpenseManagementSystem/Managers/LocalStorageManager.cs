@@ -4,12 +4,7 @@ namespace ExpenseManagementSystem.Managers;
 
 public class localStorage(ILocalStorageService localStorage) : IlocalStorage
 {
-    /// <summary>
-    /// Retrieves data stored in local storage(stores value in key value pair and fetches data) based on the provided keys
-    /// </summary>
-    /// <typeparam name="T">Generic Data Type Parameter</typeparam>
-    /// <param name="key"></param>
-    /// <returns></returns>
+    
     public async Task<T?> GetItemAsync<T>(string key)
     {
         return await localStorage.GetItemAsync<T>(key);
@@ -19,7 +14,7 @@ public class localStorage(ILocalStorageService localStorage) : IlocalStorage
     {
         var item = await GetItemAsync<T>(key);
 
-        // Checks if item is null, if not null removes existing data stored in that particular key.
+       
         if (item != null) await ClearItemAsync(key);
 
         await localStorage.SetItemAsync(key, value);

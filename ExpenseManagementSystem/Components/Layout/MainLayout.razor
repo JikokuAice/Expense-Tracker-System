@@ -15,7 +15,7 @@
         else
         {
             <MudLayout>
-                <MudAppBar Class="top-bar bg-dark" Style="z-index: -9999" Elevation="0">
+                <MudAppBar Class="top-bar bg-dark"  Elevation="0">
                     <div class="d-flex align-items-center justify-content-start">
                         <MudTooltip Text="Toggle Drawer" Color="Color.Dark">
                             <MudIconButton Class="drawer-button" Icon="@Icons.Material.Rounded.Notes" Color="Color.Success" Edge="Edge.Start" OnClick="DrawerToggle"/>
@@ -60,7 +60,7 @@
                         </MudMenu>
                     </div>
                 </MudAppBar>
-                <MudDrawer @bind-Open="@DrawerOpen" Elevation="0" ClipMode="DrawerClipMode.Never" Color="Color.Dark" Class="sidebar" Width="280px" Height="100%">
+                <MudDrawer @bind-Open="@DrawerOpen" Elevation="0" ClipMode="DrawerClipMode.Never" Color="Color.Dark" Class="sidebar" Width="280px" Height="100%" Style="z-index: 9999">
                     <NavMenu />
                 </MudDrawer>
                 <MudMainContent>
@@ -75,3 +75,8 @@
         }
     </MudRTLProvider>
 </CascadingValue>
+
+
+
+
+
