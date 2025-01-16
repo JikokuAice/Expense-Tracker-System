@@ -178,7 +178,7 @@ public class DebtService(IGenericRepository genericRepository, IUserServices use
             throw new Exception("You are not logged in.");
         }
 
-        var debtModel = new Debt
+        var DebtDtoModel  = new Debt
         {
             Title = debt.Title,
             Source = debt.Source,
@@ -191,7 +191,7 @@ public class DebtService(IGenericRepository genericRepository, IUserServices use
 
         var debts = genericRepository.GetAll<Debt>(Constants.FilePath.AppDebtsDirectoryPath);
 
-        debts.Add(debtModel);
+        debts.Add(DebtDtoModel );
 
         genericRepository.SaveAll(debts, Constants.FilePath.AppDataDirectoryPath, Constants.FilePath.AppDebtsDirectoryPath);
     }
@@ -207,21 +207,21 @@ public class DebtService(IGenericRepository genericRepository, IUserServices use
 
         var debts = genericRepository.GetAll<Debt>(Constants.FilePath.AppDebtsDirectoryPath);
 
-        var debtModel = debts.FirstOrDefault(x => x.Id == debt.Id);
+        var DebtDtoModel  = debts.FirstOrDefault(x => x.Id == debt.Id);
 
-        if (debtModel == null)
+        if (DebtDtoModel  == null)
         {
             throw new Exception("A debt with the following identifier couldn't be found.");
         }
 
-        debtModel.Title = debt.Title;
-        debtModel.Source = debt.Source;
-        debtModel.Amount = debt.Amount;
-        debtModel.DueDate = debt.DueDate != null
+        DebtDtoModel .Title = debt.Title;
+        DebtDtoModel .Source = debt.Source;
+        DebtDtoModel .Amount = debt.Amount;
+        DebtDtoModel .DueDate = debt.DueDate != null
             ? DateOnly.FromDateTime(debt.DueDate.Value)
             : DateOnly.FromDateTime(DateTime.Now);
-        debtModel.LastModifiedBy = userDetails.Id;
-        debtModel.LastModifiedAt = DateTime.Now;
+        DebtDtoModel .LastModifiedBy = userDetails.Id;
+        DebtDtoModel .LastModifiedAt = DateTime.Now;
 
         genericRepository.SaveAll(debts, Constants.FilePath.AppDataDirectoryPath, Constants.FilePath.AppDebtsDirectoryPath);
     }
@@ -237,29 +237,29 @@ public class DebtService(IGenericRepository genericRepository, IUserServices use
 
         var debts = genericRepository.GetAll<Debt>(Constants.FilePath.AppDebtsDirectoryPath);
 
-        var debtModel = debts.FirstOrDefault(x => x.Id == debtId);
+        var DebtDtoModel  = debts.FirstOrDefault(x => x.Id == debtId);
 
-        if (debtModel == null)
+        if (DebtDtoModel  == null)
         {
             throw new Exception("A debt with the following identifier couldn't be found.");
         }
 
-        if (debtModel.Status == DebtStatus.Cleared)
+        if (DebtDtoModel .Status == DebtStatus.Cleared)
         {
             throw new Exception("You can not clear an already cleared debt.");
         }
 
         var balance = await GetUserReminingBalance();
 
-        if (balance < debtModel.Amount)
+        if (balance < DebtDtoModel .Amount)
         {
             throw new Exception("You do not have sufficient balance to clear the following debt, please add sources of incoming transactions to clear the respective debt.");
         } 
         
-        debtModel.Status = DebtStatus.Cleared;
-        debtModel.LastModifiedBy = userDetails.Id;
-        debtModel.LastModifiedAt = DateTime.Now;
-        debtModel.ClearedDate = DateTime.Now;
+        DebtDtoModel .Status = DebtStatus.Cleared;
+        DebtDtoModel .LastModifiedBy = userDetails.Id;
+        DebtDtoModel .LastModifiedAt = DateTime.Now;
+        DebtDtoModel .ClearedDate = DateTime.Now;
 
         genericRepository.SaveAll(debts, Constants.FilePath.AppDataDirectoryPath, Constants.FilePath.AppDebtsDirectoryPath);
     }
@@ -275,16 +275,16 @@ public class DebtService(IGenericRepository genericRepository, IUserServices use
         
         var debts = genericRepository.GetAll<Debt>(Constants.FilePath.AppDebtsDirectoryPath);
 
-        var debtModel = debts.FirstOrDefault(x => x.Id == debt.Id);
+        var DebtDtoModel  = debts.FirstOrDefault(x => x.Id == debt.Id);
 
-        if (debtModel == null)
+        if (DebtDtoModel  == null)
         {
             throw new Exception("A debt with the following identifier couldn't be found.");
         }
 
-        debtModel.IsActive = false;
-        debtModel.LastModifiedBy = userDetails.Id;
-        debtModel.LastModifiedAt = DateTime.Now;
+        DebtDtoModel .IsActive = false;
+        DebtDtoModel .LastModifiedBy = userDetails.Id;
+        DebtDtoModel .LastModifiedAt = DateTime.Now;
 
         genericRepository.SaveAll(debts, Constants.FilePath.AppDataDirectoryPath, Constants.FilePath.AppDebtsDirectoryPath);
     }

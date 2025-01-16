@@ -29,32 +29,32 @@
             <thead>
             <tr>
                 <th class="text-white">#</th>
-                <th @onclick="() => ChangeSorting(nameof(GetDebtModel.Title))" class="text-white" style="cursor: pointer;">
+                <th @onclick="() => ChangeSorting(nameof(GetDebtDtoModel .Title))" class="text-white" style="cursor: pointer;">
                     Title
-                    <MudIcon Icon="@GetSortIcon(nameof(GetDebtModel.Title))" Class="ms-1" />
+                    <MudIcon Icon="@GetSortIcon(nameof(GetDebtDtoModel .Title))" Class="ms-1" />
                 </th>
-                <th class="text-white" @onclick="() => ChangeSorting(nameof(GetDebtModel.Amount))" style="cursor: pointer;">
+                <th class="text-white" @onclick="() => ChangeSorting(nameof(GetDebtDtoModel .Amount))" style="cursor: pointer;">
                     Amount
-                    <MudIcon Icon="@GetSortIcon(nameof(GetDebtModel.Amount))" Class="ms-1" />
+                    <MudIcon Icon="@GetSortIcon(nameof(GetDebtDtoModel .Amount))" Class="ms-1" />
                 </th>
                 <th class="text-white">Source</th>
                 <th class="text-white">Status</th>
-                <th class="text-white" @onclick="() => ChangeSorting(nameof(GetDebtModel.DueDate))" style="cursor: pointer;">
+                <th class="text-white" @onclick="() => ChangeSorting(nameof(GetDebtDtoModel .DueDate))" style="cursor: pointer;">
                     Due Date
-                    <MudIcon Icon="@GetSortIcon(nameof(GetDebtModel.DueDate))" Class="ms-1" />
+                    <MudIcon Icon="@GetSortIcon(nameof(GetDebtDtoModel .DueDate))" Class="ms-1" />
                 </th>
-                <th @onclick="() => ChangeSorting(nameof(GetDebtModel.ClearedDate))" style="cursor: pointer;">
+                <th @onclick="() => ChangeSorting(nameof(GetDebtDtoModel .ClearedDate))" style="cursor: pointer;">
                     Cleared Date
-                    <MudIcon Icon="@GetSortIcon(nameof(GetDebtModel.ClearedDate))" Class="ms-1" />
+                    <MudIcon Icon="@GetSortIcon(nameof(GetDebtDtoModel .ClearedDate))" Class="ms-1" />
                 </th>
                 <th>Action</th>
             </tr>
             </thead>
             <tbody>
-            @foreach (var debt in DebtModels)
+            @foreach (var debt in DebtDtoModels)
             {
             <tr>
-                <td>@(DebtModels.IndexOf(debt) + 1).</td>
+                <td>@(DebtDtoModels.IndexOf(debt) + 1).</td>
                 <td>@debt.Title</td>
                 <td>@debt.Amount</td>
                 <td>@debt.Source</td>
@@ -103,21 +103,21 @@
 {
     <ModalDialog Title="Tags" Size="lg">
         <BodyContent>
-            <EditForm Model="InsertUserDebtModel" FormName="Insert Debt" OnSubmit="InsertUserDebt">
+            <EditForm Model="InsertUserDebtDtoModel " FormName="Insert Debt" OnSubmit="InsertUserDebt">
                 <DataAnnotationsValidator />
                 <div class="mb-3">
-                    <MudTextField @bind-Value="InsertUserDebtModel.Title" 
+                    <MudTextField @bind-Value="InsertUserDebtDtoModel .Title" 
                                   Label="Title" 
-                                  For="@(() => InsertUserDebtModel.Title)" 
+                                  For="@(() => InsertUserDebtDtoModel .Title)" 
                                   Variant="Variant.Text" 
                                   Placeholder="Enter the Debt Title" 
                                   Required="true"
                                   Immediate="true" />
                 </div>
                 <div class="mb-3">
-                    <MudTextField @bind-Value="InsertUserDebtModel.Amount"
+                    <MudTextField @bind-Value="InsertUserDebtDtoModel .Amount"
                                   Label="Amount"
-                                  For="@(() => InsertUserDebtModel.Amount)"
+                                  For="@(() => InsertUserDebtDtoModel .Amount)"
                                   Variant="Variant.Text"
                                   Placeholder="Enter the Debt Amount"
                                   Required="true"
@@ -125,16 +125,16 @@
                                   Immediate="true" />
                 </div>
                 <div class="mb-3">
-                    <MudTextField @bind-Value="InsertUserDebtModel.Source"
+                    <MudTextField @bind-Value="InsertUserDebtDtoModel .Source"
                                   Label="Source"
-                                  For="@(() => InsertUserDebtModel.Source)"
+                                  For="@(() => InsertUserDebtDtoModel .Source)"
                                   Variant="Variant.Text"
                                   Placeholder="Enter the Debt Source"
                                   Required="true"
                                   Immediate="true" />
                 </div>
                 <div class="mb-3">
-                    <MudDatePicker @bind-Date="InsertUserDebtModel.DueDate"
+                    <MudDatePicker @bind-Date="InsertUserDebtDtoModel .DueDate"
                                    Label="Due Date"
                                    Variant="Variant.Text"
                                    DateFormat="dd.MM.yyyy"
@@ -154,13 +154,13 @@
 {
     <ModalDialog Title="Tags" Size="lg">
         <BodyContent>
-            <EditForm Model="GetDebtModel" FormName="Clear Debt" OnSubmit="ClearUserDebt">
+            <EditForm Model="GetDebtDtoModel " FormName="Clear Debt" OnSubmit="ClearUserDebt">
                 <DataAnnotationsValidator />
                 <div class="mb-3">
-                    <span>Are you sure you want to clear the debt for @GetDebtModel.Title due on @GetDebtModel.DueDate, pending amount is @GetDebtModel.Amount?</span>
+                    <span>Are you sure you want to clear the debt for @GetDebtDtoModel .Title due on @GetDebtDtoModel .DueDate, pending amount is @GetDebtDtoModel .Amount?</span>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-secondary" @onclick="() => OpenCloseClearUserDebtModal(GetDebtModel.Id)">Discard</button>
+                    <button type="button" class="btn btn-outline-secondary" @onclick="() => OpenCloseClearUserDebtModal(GetDebtDtoModel .Id)">Discard</button>
                     <button type="submit" class="btn btn-outline-dark">Submit</button>
                 </div>
             </EditForm>

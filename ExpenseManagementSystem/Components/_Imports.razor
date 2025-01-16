@@ -19,8 +19,14 @@
 @using ExpenseManagementSystem.Services.Interfaces
 @using ExpenseManagementSystemr.Services.Seed
 
+@* Apex Charts *@
+@using ApexCharts
+
 @* Mudblazor Injection *@
 @using MudBlazor
+@using Size = MudBlazor.Size
+@using Align = MudBlazor.Align
+@using Color = MudBlazor.Color
 
 @* Service and Manager Injection *@
 @inject NavigationManager NavigationManager
@@ -32,3 +38,4 @@
 @inject ITagServices TagService
 @inject ITransactionServices TransactionService
 @inject IUserServices UserService
+@inject IDashboardService DashboardService

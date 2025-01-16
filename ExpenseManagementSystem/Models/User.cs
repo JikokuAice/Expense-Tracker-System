@@ -1,5 +1,6 @@
 ﻿using ExpenseManagementSystem.Models.Base;
 using System.Data;
+using ExpenseManagementSystem.Models.Constant;
 
 namespace ExpenseManagementSystem.Models;
 
@@ -13,3 +14,5 @@ public class User : BaseEntity<Guid>
 
     public string Currency { get; set; }
 }
+
+

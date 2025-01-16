@@ -30,6 +30,15 @@ public partial class Register
     {
         try
         {
+            if (Registration.Currency.ToUpper() != "USD" || Registration.Currency.ToUpper() != "EUR" || Registration.Currency.ToUpper() != "NPR")
+            {
+                throw new Exception("USD, EUR, NPR Currency is only supported.");
+            }
+            else
+            {
+                Registration.Currency=Registration.Currency.ToUpper();
+            }
+            
             AuthenticationService.RegisterNewUSer(Registration);
             
             SnackbarService.PopSnackBar("User successfully registered.", Severity.Success, Variant.Outlined);
@@ -38,7 +47,7 @@ public partial class Register
         }
         catch (Exception ex)
         {
-            SnackbarService.PopSnackBar(ex.Message, Severity.Error, Variant.Outlined);
+            SnackbarService.PopSnackBar(ex.Message, Severity.Info, Variant.Outlined);
         }
     }
     #endregion

@@ -62,7 +62,7 @@ public class AuthenticationService(IGenericRepository genericRepository, Iserial
     {
         register.Username = register.Username.Trim();
 
-        if (register.Username == "" || register.Currency == "" || register.Password == "")
+        if (register.Username == "" || register.Currency == ""|| register.Password == "")
         {
             throw new Exception("Please insert correct and valid input for each of the fields.");
         }

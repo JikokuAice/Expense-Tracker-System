@@ -1,4 +1,6 @@
-﻿namespace ExpenseManagementSystem.DTOs.Authentication;
+﻿using ExpenseManagementSystem.Models.Constant;
+
+namespace ExpenseManagementSystem.DTOs.Authentication;
 
 public class UserDetailsDto
 {

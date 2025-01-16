@@ -18,14 +18,7 @@ public enum TransactionSource
     Expenses = 6
 }
 
-public enum Currency
-{
-    None = 0,
-    NRP = 1,
-    INR = 2,
-    USD = 3,
-    AUD = 4,
-}
+
 
 public enum DebtStatus
 {

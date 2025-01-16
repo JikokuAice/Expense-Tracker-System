@@ -102,7 +102,7 @@ public partial class DebtDetails
     #endregion
 
     #region Debts Details
-    private List<GetDebtDto> DebtModels { get; set; } = new();
+    private List<GetDebtDto> DebtDtoModels { get; set; } = new();
 
     private async Task GetAllDebts()
     {
@@ -116,7 +116,7 @@ public partial class DebtDetails
             Status = DebtStatus
         };
 
-        DebtModels = await DebtService.GetAllDebts(filterRequest);
+        DebtDtoModels = await DebtService.GetAllDebts(filterRequest);
 
         StateHasChanged();
     }
@@ -125,13 +125,13 @@ public partial class DebtDetails
     #region Debts Creation
     private bool IsInsertUserDebtModalOpen { get; set; }
     
-    private InsertUserDebtDto InsertUserDebtModel { get; set; } = new();
+    private InsertUserDebtDto InsertUserDebtDtoModel  { get; set; } = new();
     
     private void OpenCloseInsertUserDebtModal()
     {
         IsInsertUserDebtModalOpen = !IsInsertUserDebtModalOpen;
 
-        InsertUserDebtModel = new InsertUserDebtDto();
+        InsertUserDebtDtoModel  = new InsertUserDebtDto();
         
         StateHasChanged();
     }
@@ -140,7 +140,7 @@ public partial class DebtDetails
     {
         try
         {
-            await DebtService.InsertUserDebt(InsertUserDebtModel);
+            await DebtService.InsertUserDebt(InsertUserDebtDtoModel );
 
             await OnDebtsCountUpdate.InvokeAsync();
             
@@ -160,7 +160,7 @@ public partial class DebtDetails
     #endregion
 
     #region Clear Debt
-    private GetDebtDto GetDebtModel { get; set; } = new();
+    private GetDebtDto GetDebtDtoModel  { get; set; } = new();
 
     private bool IsClearUserDebtModalOpen { get; set; }
 
@@ -168,7 +168,7 @@ public partial class DebtDetails
     {
         IsClearUserDebtModalOpen = !IsClearUserDebtModalOpen;
 
-        GetDebtModel = IsClearUserDebtModalOpen ? DebtService.FetchDebtById(debtId) : new();
+        GetDebtDtoModel  = IsClearUserDebtModalOpen ? DebtService.FetchDebtById(debtId) : new();
 
         StateHasChanged();
     }
@@ -177,9 +177,9 @@ public partial class DebtDetails
     {
         try
         {
-            await DebtService.ClearUserDebt(GetDebtModel.Id);
+            await DebtService.ClearUserDebt(GetDebtDtoModel .Id);
 
-            OpenCloseClearUserDebtModal(GetDebtModel.Id);
+            OpenCloseClearUserDebtModal(GetDebtDtoModel .Id);
 
             await OnDebtsCountUpdate.InvokeAsync();
             

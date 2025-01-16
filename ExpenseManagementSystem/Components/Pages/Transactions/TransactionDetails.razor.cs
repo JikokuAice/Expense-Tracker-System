@@ -10,6 +10,7 @@ namespace ExpenseManagementSystem.Components.Pages.Transactions;
 
 public partial class TransactionDetails
 {
+    
     [Parameter] 
     public TransactionType? TransactionType { get; set; }
 

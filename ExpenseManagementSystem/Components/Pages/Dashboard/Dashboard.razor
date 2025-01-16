@@ -1,0 +1,277 @@
+@page "/Dashboard"
+@using ExpenseManagementSystem.DTOs.Dashboard
+@using ExpenseManagementSystem.DTOs.Dashboard.Filters
+@using ExpenseManagementSystem.Models.Constant
+
+
+<div class="container">
+    <div class="row">
+        <div class="d-flex justify-content-sm-evenly align-items-start gap-x-2">
+            <div class="card border-success mb-2" style="max-width: 20rem;">
+                <div class="card-header">Total Income</div>
+                <div class="card-body text-success">
+                    <h6 class="card-subtitle mb-2 text-muted text-dnager">Credit @(DashboardCardsData.TotalInflowCount)</h6>
+                    <p class="card-text text-success h3">@UserCurrency @DashboardCardsData.TotalInflow</p>
+                </div>
+            </div>
+            <div class="card border-danger mb-2" style="max-width: 20rem;">
+                <div class="card-header">Total Outflow</div>
+                <div class="card-body text-danger">
+                    <h6 class="card-subtitle mb-2 text-muted text-danger">Debit @(@DashboardCardsData.TotalOutflowCount)</h6>
+                    <p class="card-text text-danger h3">@UserCurrency @DashboardCardsData.TotalOutflow</p>
+                </div>
+            </div>
+            <div class="card border-info mb-2" style="max-width: 20rem;">
+                <div class="card-header">Total Debt</div>
+                <div class="card-body text-info">
+                    <h6 class="card-subtitle mb-2 text-muted text-info">Debt @(DashboardCardsData.TotalDebtCount)</h6>
+                    <p class="card-text text-info h3">@UserCurrency @DashboardCardsData.TotalDebt</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="inner-padding mb-4">
+        <div class="d-flex mb-4 gap-3">
+            <div class="filter d-flex justify-content-between align-items-center mb-4 gap-3 flex-wrap">
+                <div class="filter-left d-flex align-items-center gap-x-2">
+                    <MudTextField T="string" @bind-Value="Search" Immediate="true" Placeholder="Search" Variant="Variant.Text" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" Class="search-input text-dark" />
+                    <Filter OnFilterApplication="OnDebtFilterHandler">
+                        <MudDatePicker @bind-Date="StartDate"
+                                       Label="Start Date"
+                                       Variant="Variant.Text"
+                                       DateFormat="dd.MM.yyyy"
+                                       Placeholder="Select a Start Date"
+                                       PickerVariant="PickerVariant.Dialog" />
+                        <MudDatePicker @bind-Date="EndDate"
+                                       Label="End Date"
+                                       Variant="Variant.Text"
+                                       DateFormat="dd.MM.yyyy"
+                                       Placeholder="Select a End Date"
+                                       PickerVariant="PickerVariant.Dialog" />
+                    </Filter>
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th @onclick="() => ChangeSorting(nameof(DebtDtoModel .Title))" style="cursor: pointer;">
+                        Title
+                        <MudIcon Icon="@GetSortIcon(nameof(DebtDtoModel .Title))" Class="ms-1" />
+                    </th>
+                    <th @onclick="() => ChangeSorting(nameof(DebtDtoModel .Amount))" style="cursor: pointer;">
+                        Amount
+                        <MudIcon Icon="@GetSortIcon(nameof(DebtDtoModel .Amount))" Class="ms-1" />
+                    </th>
+                    <th>Source</th>
+                    <th>Status</th>
+                    <th @onclick="() => ChangeSorting(nameof(DebtDtoModel .DueDate))" style="cursor: pointer;">
+                        Due Date
+                        <MudIcon Icon="@GetSortIcon(nameof(DebtDtoModel .DueDate))" Class="ms-1" />
+                    </th>
+                    <th @onclick="() => ChangeSorting(nameof(DebtDtoModel .ClearedDate))" style="cursor: pointer;">
+                        Cleared Date
+                        <MudIcon Icon="@GetSortIcon(nameof(DebtDtoModel .ClearedDate))" Class="ms-1" />
+                    </th>
+                </tr>
+             
+                <tbody> 
+                @foreach (var debt in PendingDebtList) 
+                { 
+                    <tr>
+                        <td>@(PendingDebtList.IndexOf(debt) + 1).</td> 
+                        <td>@debt.Title</td>
+                        <td>@debt.Amount</td> *
+                        <td>@debt.Source</td>
+                        <td>
+                            @if (debt.Status != DebtStatus.Cleared)
+                            {
+                                switch (debt.Status)
+                                {
+                                    case DebtStatus.Pending:
+                                        <MudChip T="string" Variant="Variant.Outlined" Class="status" Color="Color.Warning">
+                                            <span>Pending</span>
+                                        </MudChip>
+                                        break;
+                                    case DebtStatus.PastDue:
+                                        <MudChip T="string" Variant="Variant.Outlined" Class="status" Color="Color.Error">
+                                            <span>Overdue</span>
+                                        </MudChip>
+                                        break;
+                                }
+                            }
+                            else
+                            {
+                                <MudChip T="string" Variant="Variant.Outlined" Class="status" Color="Color.Success">
+                                    <span>Cleared</span>
+                                </MudChip>
+                            }
+                        </td>
+                        <td>@debt.DueDate</td>
+                        <td>@debt.ClearedDate</td>
+                    </tr>
+                }
+                </tbody>
+            </table> 
+        </div>
+    </div>
+    @* Inflow *@
+    <div class="inner-padding row mb-4">
+        <div class="col-4">
+            <div class="d-flex mb-4 gap-3">
+                <div class="filter d-flex justify-content-between align-items-center mb-4 gap-3 flex-wrap">
+                    <div class="filter-left d-flex align-items-center gap-x-2">
+                        <MudText Typo="Typo.h6" HtmlTag="h1" Color="Color.Inherit" Class="topbar-text ms-2">
+                            Inflows
+                        </MudText>
+                        <Filter OnFilterApplication="GetInflowsVisualizationDetails">
+                            <MudTextField @bind-Value="InflowsVisualizationFilter.Count"
+                                          Label="Record Count"
+                                          For="@(() => InflowsVisualizationFilter.Count)"
+                                          Variant="Variant.Outlined"
+                                          InputType="InputType.Number"
+                                          Placeholder="Enter your count limit"
+                                          Immediate="true"/>
+                            <MudRadioGroup @bind-Value="InflowsVisualizationFilter.IsAscending">
+                                <MudRadio Value="true" Color="Color.Primary" Dense="true">Lowest</MudRadio>
+                                <MudRadio Value="false" Color="Color.Secondary" Dense="false">Highest</MudRadio>
+                            </MudRadioGroup>
+                            <MudRadioGroup @bind-Value="InflowsVisualizationFilter.IsDisplayedAsBarChart">
+                                <MudRadio Value="true" Color="Color.Primary" Dense="true">Bar Chart</MudRadio>
+                                <MudRadio Value="false" Color="Color.Secondary" Dense="false">Doughnut Chart</MudRadio>
+                            </MudRadioGroup>
+                        </Filter>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                @if (InflowsVisualizationFilter.IsDisplayedAsBarChart)
+                {
+                    <BarChart T="DetailsForVisualization"
+                              Items="InflowDataListForVisualization"
+                              Title="Inflow Transactions"
+                              Height="300"
+                              MaxYValue="@DashboardCardsData.TotalInflow"
+                              Width="500"
+                              IsHorizontallyAligned="false"
+                              XValue="@(e=>e.Title)"
+                              YValue="@(e=>e.Sum(x=>x.Amount))"/>
+                }
+                else
+                {
+                    <DonutChart T="DetailsForVisualization"
+                                Items="InflowDataListForVisualization"
+                                XValue="@(e => e.Title)"
+                                YValue="@(e => e.Amount)"/>
+                }
+            </div>
+        </div>
+@* Outflow *@
+        <div class="col-4">
+            <div class="d-flex mb-4 gap-3">
+                <div class="filter d-flex justify-content-between align-items-center mb-4 gap-3 flex-wrap">
+                    <div class="filter-left d-flex align-items-center gap-x-2">
+                        <MudText Typo="Typo.h6" HtmlTag="h1" Color="Color.Inherit" Class="topbar-text ms-2">
+                         Outflows
+                        </MudText>
+                        <Filter OnFilterApplication="GetOutflowVisualizationDetails">
+                            <MudTextField @bind-Value="OutflowsVisualizationFilter.Count"
+                                          Label="Record Count"
+                                          For="@(() => OutflowsVisualizationFilter.Count)"
+                                          Variant="Variant.Outlined"
+                                          InputType="InputType.Number"
+                                          Placeholder="Enter your count limit"
+                                          Immediate="true"/>
+                            <MudRadioGroup @bind-Value="OutflowsVisualizationFilter.IsAscending">
+                                <MudRadio Value="true" Color="Color.Primary" Dense="true">Lowest</MudRadio>
+                                <MudRadio Value="false" Color="Color.Secondary" Dense="false">Highest</MudRadio>
+                            </MudRadioGroup>
+                            <MudRadioGroup @bind-Value="OutflowsVisualizationFilter.IsDisplayedAsBarChart">
+                                <MudRadio Value="true" Color="Color.Primary" Dense="true">Bar Chart</MudRadio>
+                                <MudRadio Value="false" Color="Color.Secondary" Dense="false">Doughnut Chart</MudRadio>
+                            </MudRadioGroup>
+                        </Filter>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                @if (OutflowsVisualizationFilter.IsDisplayedAsBarChart)
+                {
+                <BarChart T="DetailsForVisualization"
+                          Items="OutFlowDataListForVisualization"
+                          Title="Outflow Transactions"
+                          Height="300"
+                          MaxYValue="@DashboardCardsData.TotalOutflow"
+                          Width="500"
+                          IsHorizontallyAligned="false"
+                          XValue="@(e=>e.Title)"
+                          YValue="@(e=>e.Sum(x=>x.Amount))"/>
+                }
+                else
+                {
+                <DonutChart T="DetailsForVisualization"
+                            Items="OutFlowDataListForVisualization"
+                            XValue="@(e => e.Title)"
+                            YValue="@(e => e.Amount)"/>
+                }
+            </div>
+        </div>
+        
+        @* Debt  *@
+        <div class="col-4">
+            <div class="d-flex mb-4 gap-3">
+                <div class="filter d-flex justify-content-between align-items-center mb-4 gap-3 flex-wrap">
+                    <div class="filter-left d-flex align-items-center gap-x-2">
+                        <MudText Typo="Typo.h6" HtmlTag="h1" Color="Color.Inherit" Class="topbar-text ms-2">
+                            Outflows
+                        </MudText>
+                        <Filter OnFilterApplication="GetDebtVisualizationDetails">
+                            <MudTextField @bind-Value="DebtVisualizationFilter.Count"
+                                          Label="Record Count"
+                                          For="@(() => DebtVisualizationFilter.Count)"
+                                          Variant="Variant.Outlined"
+                                          InputType="InputType.Number"
+                                          Placeholder="Enter your count limit"
+                                          Immediate="true"/>
+                            <MudRadioGroup @bind-Value="DebtVisualizationFilter.IsAscending">
+                                <MudRadio Value="true" Color="Color.Primary" Dense="true">Lowest</MudRadio>
+                                <MudRadio Value="false" Color="Color.Secondary" Dense="false">Highest</MudRadio>
+                            </MudRadioGroup>
+                            <MudRadioGroup @bind-Value="DebtVisualizationFilter.IsDisplayedAsBarChart">
+                                <MudRadio Value="true" Color="Color.Primary" Dense="true">Bar Chart</MudRadio>
+                                <MudRadio Value="false" Color="Color.Secondary" Dense="false">Doughnut Chart</MudRadio>
+                            </MudRadioGroup>
+                        </Filter>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                @if (DebtVisualizationFilter.IsDisplayedAsBarChart)
+                {
+                <BarChart T="DetailsForVisualization"
+                          Items="DebtDataListForVisualization"
+                          Title="Debt Transactions"
+                          Height="300"
+                          MaxYValue="@DashboardCardsData.TotalDebt"
+                          Width="500"
+                          IsHorizontallyAligned="false"
+                          XValue="@(e=>e.Title)"
+                          YValue="@(e=>e.Sum(x=>x.Amount))"/>
+                }
+                else
+                {
+                <DonutChart T="DetailsForVisualization"
+                            Items="DebtDataListForVisualization"
+                            XValue="@(e => e.Title)"
+                            YValue="@(e => e.Amount)"/>
+                }
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    
+
+</div>

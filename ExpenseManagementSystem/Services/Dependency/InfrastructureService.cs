@@ -39,9 +39,8 @@ public static class InfrastructureService
         #region Dependency Injection
         services.AddTransient<IlocalStorage, localStorage>();
         services.AddTransient<IserializerAndDeserializerManager, serializerAndDeserializerManager>();
-
         services.AddTransient<IGenericRepository, GenericRepository>();
-
+        services.AddTransient<IDashboardService, DashboardService>();
         services.AddTransient<IAuthServices, AuthenticationService>();
         services.AddTransient<IDebtServices, DebtService>();
         services.AddTransient<ISeedingService, SeedingService>();
